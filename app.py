@@ -38,10 +38,32 @@ def connect():
         logger.exception("Database Connection Error")
 
 
+def build_db():
+    conn = connect()
+    query = ("""create table User (
+                ID varchar(255) NOT NULL,
+                firstName varchar(255) NOT NULL,
+                lastName varchar(255) NOT NULL,
+                email varchar(255) NOT NULL,
+                PRIMARY KEY (ID))""")
+    try:
+        with conn.cursor() as cur:
+            # just in case it doesn't work the first time let's drop it
+            cur.execute(query)
+            conn.commit()
+    except Exception as e:
+        logger.exception(e)
+        return Response(json.dumps({"status": "error",
+                                    "message": "could not build table"}), 500)
+    finally:
+        cur.close()
+        conn.close()
+    return Response(json.dumps({"status": "success"}), 200)
+
+
 # here is how we are handling routing with flask:
 @app.route('/')
 def index():
-    connect()
     return "Hello World!", 200
 
 
@@ -59,6 +81,11 @@ def user():
                      'last_name': last_name,
                      'email': email}
     return Response(json.dumps(resp_dict), 200)
+
+@app.route('/build', methods=['GET'])
+def build():
+    return build_db()
+
 
 
 # include this for local dev
