@@ -82,11 +82,6 @@ def user():
                      'email': email}
     return Response(json.dumps(resp_dict), 200)
 
-@app.route('/build', methods=['GET'])
-def build():
-    return build_db()
-
-
 
 # include this for local dev
 if __name__ == '__main__':
