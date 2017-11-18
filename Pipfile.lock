@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "398a30004bf428d49e9ea24ebc9d9ef5f28e1c7ec1cda40c5b1e0fee5fc0a6b6"
+            "sha256": "21286c863d11ab28e3f0c9bc516e60cca2c0ef5a10650aa080099f88a9abbae7"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -52,10 +52,10 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:4f8b432463299c5b7718d1e32bcb48201d8e58761e3b7c9d7d17d62e42246c5d",
-                "sha256:73895086a6f42d8ee0a139b068f0b6f2a8d7da3bb06e65083f37a4c274c2c458"
+                "sha256:e1826662cfce2da41e8725d8e382a8684bc9dd1258c889a5e037208ba8daf91d",
+                "sha256:997bf5553fc92e276788f0a46adeb10d90240f72fe52bbd4fbc07df037281d2e"
             ],
-            "version": "==1.7.45"
+            "version": "==1.7.47"
         },
         "certifi": {
             "hashes": [
@@ -104,6 +104,14 @@
                 "sha256:e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
             ],
             "version": "==0.16.0"
+        },
+        "futures": {
+            "hashes": [
+                "sha256:c4884a65654a7c45435063e14ae85280eb1f111d94e542396717ba9828c4337f",
+                "sha256:51ecb45f0add83c806c68e4b06106f90db260585b25ef2abfcda0bd95c0132fd"
+            ],
+            "markers": "python_version == '2.6' or python_version == '2.7'",
+            "version": "==3.1.1"
         },
         "hjson": {
             "hashes": [
@@ -163,12 +171,26 @@
             ],
             "version": "==0.8.1"
         },
+        "pymysql": {
+            "hashes": [
+                "sha256:ac3dfb1f650582eca2e1e0701598bc04364ac464daa425cbbc26bb32ae54cdd5",
+                "sha256:56e3f5bcef6501012233620b54f6a7b8a34edc5751e85e4e3da9a0d808df5f68"
+            ],
+            "version": "==0.7.11"
+        },
         "python-dateutil": {
             "hashes": [
                 "sha256:95511bae634d69bc7329ba55e646499a842bc4ec342ad54a8cdb65645a0aad3c",
                 "sha256:891c38b2a02f5bb1be3e4793866c8df49c7d19baabf9c1bad62547e0b4866aca"
             ],
             "version": "==2.6.1"
+        },
+        "python-dotenv": {
+            "hashes": [
+                "sha256:dc7940052cfe170e881aea40feb4ea7776e6a97170ed038fd2ee7e26e47585f2",
+                "sha256:45e927c34204c90f5faa35ea8709b894f6b1a7712d77eb50940601068040993b"
+            ],
+            "version": "==0.7.1"
         },
         "python-slugify": {
             "hashes": [
@@ -279,17 +301,17 @@
     "develop": {
         "awscli": {
             "hashes": [
-                "sha256:edf697dcd33073b0c75bc8186882b8ae7bfc6f69a95674632dc458d38b21643e",
-                "sha256:2de062abfb4616c8f8f060b254d98686551f4426b856bf0218f7e767886fc031"
+                "sha256:5be0e9778f2cdf628fe9afa770e8840b147c4b9d6824eb4d9d58f8d385ade200",
+                "sha256:a279ea3bb87836e869d9dcacd1d46d88703367eb979f544a074248a1f06cc57b"
             ],
-            "version": "==1.11.187"
+            "version": "==1.11.189"
         },
         "botocore": {
             "hashes": [
-                "sha256:4f8b432463299c5b7718d1e32bcb48201d8e58761e3b7c9d7d17d62e42246c5d",
-                "sha256:73895086a6f42d8ee0a139b068f0b6f2a8d7da3bb06e65083f37a4c274c2c458"
+                "sha256:e1826662cfce2da41e8725d8e382a8684bc9dd1258c889a5e037208ba8daf91d",
+                "sha256:997bf5553fc92e276788f0a46adeb10d90240f72fe52bbd4fbc07df037281d2e"
             ],
-            "version": "==1.7.45"
+            "version": "==1.7.47"
         },
         "colorama": {
             "hashes": [
@@ -306,6 +328,14 @@
                 "sha256:51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274"
             ],
             "version": "==0.14"
+        },
+        "futures": {
+            "hashes": [
+                "sha256:c4884a65654a7c45435063e14ae85280eb1f111d94e542396717ba9828c4337f",
+                "sha256:51ecb45f0add83c806c68e4b06106f90db260585b25ef2abfcda0bd95c0132fd"
+            ],
+            "markers": "python_version == '2.6' or python_version == '2.7'",
+            "version": "==3.1.1"
         },
         "jmespath": {
             "hashes": [
